@@ -16,7 +16,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "visualRegression:storybook": "start-storybook -p 9010 -s --ci public",
+    "visualRegression:jest": "jest -c visualRegression/jest.config.js --passWithNoTests",
+    "visualRegression:test": "start-server-and-test visualRegression:storybook http-get://localhost:9010 visualRegression:jest"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,6 +45,12 @@
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.21",
     "babel-loader": "^8.1.0",
-    "react-is": "^16.13.1"
+    "jest-image-snapshot": "^4.2.0",
+    "jest-puppeteer": "^4.4.0",
+    "lodash": "^4.17.20",
+    "puppeteer": "^5.3.1",
+    "react-is": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "start-server-and-test": "^1.11.4"
   }
 }
