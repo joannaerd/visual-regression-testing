@@ -9,7 +9,7 @@ export default {
 
 export const Basic = () => (
     <p>
-      <Button>Hello World</Button>
+      <Button>Basic Button</Button>
     </p>
 );
 

@@ -19,7 +19,9 @@
     "build-storybook": "build-storybook -s public",
     "visualRegression:storybook": "start-storybook -p 9010 -s --ci public",
     "visualRegression:jest": "jest -c visualRegression/jest.config.js --passWithNoTests",
-    "visualRegression:test": "start-server-and-test visualRegression:storybook http-get://localhost:9010 visualRegression:jest"
+    "visualRegression:test": "start-server-and-test visualRegression:storybook http-get://localhost:9010 visualRegression:jest",
+    "visualRegression:jestUpdate": "npm run visualRegression:jest -- -u",
+    "visualRegression:update": "start-server-and-test visualRegression:storybook http-get://localhost:9010 visualRegression:jestUpdate"
   },
   "eslintConfig": {
     "extends": "react-app"
