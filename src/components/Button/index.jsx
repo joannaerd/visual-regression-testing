@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './styles.css';
+
 export const BUTTON_VARIANTS = {
   primary: 'primary',
   secondary: 'secondary',
