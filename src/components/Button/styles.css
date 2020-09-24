@@ -23,3 +23,7 @@
 .Button--secondary {
   border-color: transparent;
 }
+
+:root {
+  --color-primary: #fd804e;
+}
